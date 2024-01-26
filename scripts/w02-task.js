@@ -7,7 +7,7 @@ let fullName = "Bitner Torres";
 
 let currentYear = new Date().getFullYear();
 
-let profilePicture = 'images/Me.jpeg';
+let profilePicture = 'images/Bit.jpeg';
 
 
 
