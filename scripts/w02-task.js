@@ -23,6 +23,7 @@ const imageElement = document.querySelector('img');
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
 yearElement.textContent = currentYear;
 imageElement.setAttribute('src', profilePicture);
+imageElement.setAttribute('alt', 'Image of Bitner Torres and kitty')
 
 
 
