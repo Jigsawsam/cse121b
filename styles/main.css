@@ -226,7 +226,7 @@ footer {
     background-color: rgb(250, 225, 250, .5);
 }
 
-#sortBy {
+#filtered {
     appearance: none;
     display: flex;
     padding: .5rem;
@@ -239,7 +239,7 @@ footer {
     text-align: center;
 }
 
-#sortBy option:disabled {
+#filtered option:disabled {
     font-style: italic;
     padding: 1rem;
     background-color: #111;
