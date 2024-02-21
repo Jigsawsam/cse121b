@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE 121b | W06: Programming Tasks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a id="toggleMenu">&equiv;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="w01-task.html">W1 Task</a></li>
+      <li><a href="w03-task.html">W3 Task</a></li>
+      <li><a href="w04-task.html">W4 Task</a></li>
+      <li><a href="w05-task.html">W5 Task</a></li>
+      <li><a href="project.html" class="active" >Project</a></li>
+    </ul>
+  </nav>
+  <main id="gridly">
+    <h1>W06: Programming Tasks</h1>
+    <h2>Cat Breeds Information</h2>
+
+    <div class="filter-box">
+      <label for="filtered">Filter Cat Breeds:</label>
+      <select id="filtered" title="Choose a data filter.">
+        <option value="" disabled selected>Select Filter</option>
+        <option value="family_friendly">Family Friendly</option>
+        <option value="shedding">Shedding Levels</option>
+        <option value="general_health">General Health</option>
+        <option value="playfulness">Playfulness</option>
+        <option value="grooming">Grooming</option>
+        <option value="intelligence">Intelligence</option>
+        <option value="children_friendly">Suitable for Children</option>
+        <option value="all">Alphabetical Order</option>
+      </select>
+
+      <label for="sortOrder">Sort Order:</label>
+      <select id="sortOrder" title="Choose a sort order.">
+        <option value="" disabled selected>Select Order</option>
+        <option value="asc">Most</option>
+        <option value="desc">Least</option>
+      </select>
+    </div>
+
+    <div id="cats">
+    </div>
+  </main>
+
+  <footer>
+    &copy;<span id="year"></span> | Week 06 - Cat Breeds Information | CSE 121b
+  </footer>
+  <script src="scripts/main.js"></script>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+  <script src="scripts/project.js"></script>
+</body>
+
+</html>
